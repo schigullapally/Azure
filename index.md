@@ -1,4 +1,4 @@
 ---
-title: Azure and Technology
+title: Azure & Technology
 ---
 
