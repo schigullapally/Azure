@@ -4,46 +4,46 @@ Azure App Gateway is a powerful tool for improving the performance, availability
 
 ## Best Design Principles
 
-   - 1. Use multiple availability zones to improve high availability and resiliency.
+   -  Use multiple availability zones to improve high availability and resiliency.
 
-   - 2. Design health probes carefully to accurately reflect the state of your backend servers.
+   -  Design health probes carefully to accurately reflect the state of your backend servers.
 
-   - 3. Carefully design your Network Security Groups (NSGs) to allow traffic to flow to and from the App Gateway and its backend servers while restricting traffic from untrusted sources.
+   -  Carefully design your Network Security Groups (NSGs) to allow traffic to flow to and from the App Gateway and its backend servers while restricting traffic from untrusted sources.
 
-   - 4. Carefully consider the type of SSL/TLS certificates that will be used and how they will be managed.
+   -  Carefully consider the type of SSL/TLS certificates that will be used and how they will be managed.
 
-   - 5. Use Azure Monitor to monitor App Gateway metrics, logs, and diagnostics data to ensure the security and availability of your application.
+   -  Use Azure Monitor to monitor App Gateway metrics, logs, and diagnostics data to ensure the security and availability of your application.
 
 ## Concerns
 
-   - 1. Managing SSL/TLS certificates can be a challenge. You may need to renew certificates periodically or rotate them based on security requirements.
+   -  Managing SSL/TLS certificates can be a challenge. You may need to renew certificates periodically or rotate them based on security requirements.
 
-   - 2. Health probes can generate traffic that can impact backend server performance. Careful consideration should be given to the timing and frequency of probes.
+   -  Health probes can generate traffic that can impact backend server performance. Careful consideration should be given to the timing and frequency of probes.
 
-   - 3. The WAF feature can impact application performance. Careful tuning is required to ensure it provides adequate protection while maintaining performance.
+   -  The WAF feature can impact application performance. Careful tuning is required to ensure it provides adequate protection while maintaining performance.
 
 ## DR Strategy
 
-   - 1. Use Azure Traffic Manager to route traffic to a secondary region in the event of a failure.
+   -  Use Azure Traffic Manager to route traffic to a secondary region in the event of a failure.
 
-   - 2. Use Azure Site Recovery to replicate your App Gateway configuration to a secondary region.
+   -  Use Azure Site Recovery to replicate your App Gateway configuration to a secondary region.
 
-   - 3. Use Azure Backup to back up your configuration and restore it in the event of a failure.
+   -  Use Azure Backup to back up your configuration and restore it in the event of a failure.
 
 ## Cost Optimization
 
-   - 1. Use Azure Advisor to identify ways to optimize your App Gateway configuration.
+   -  Use Azure Advisor to identify ways to optimize your App Gateway configuration.
 
-   - 2. Use Azure Automation to automate App Gateway management tasks.
+   -  Use Azure Automation to automate App Gateway management tasks.
 
-   - 3. Use Azure Reserved Instances to save on App Gateway compute costs.
+   -  Use Azure Reserved Instances to save on App Gateway compute costs.
 
 ## Industry-wide Real-time Problems
 
-   - 1. Configuration management can be complex, particularly when managing large-scale deployments.
+   -  Configuration management can be complex, particularly when managing large-scale deployments.
 
-   - 2. The WAF feature can generate false positives, which can impact application performance.
+   -  The WAF feature can generate false positives, which can impact application performance.
 
-   - 3. Backend server scaling can be challenging, particularly when dealing with variable traffic loads.
+   -  Backend server scaling can be challenging, particularly when dealing with variable traffic loads.
 
 In conclusion, Azure App Gateway is a powerful tool for improving the performance, availability, and security of web applications running on Azure. When designing your architecture, it's important to consider best design principles, concerns, DR strategy, cost optimization, and industry-wide real-time problems. By carefully considering these factors, you can ensure a secure, highly available, and performant solution that meets your specific application requirements.
